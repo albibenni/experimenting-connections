@@ -1,0 +1,43 @@
+{
+  "name": "experimenting-connections-node",
+  "version": "0.1.0",
+  "keywords": [],
+  "author": "Alberto Benatti",
+  "license": "ISC",
+  "description": "Simple experimenting with websockets and handshakes with nodejs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "ci": "pnpm run build",
+    "compose": "docker compose down && docker compose up -d",
+    "test": "NODE_ENV=local vitest run",
+    "test:env": "NODE_ENV=local vitest run env",
+    "test:watch": "vitest",
+    "indent:check": "prettier . --check",
+    "indent:write": "prettier . --write",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@types/aws-lambda": "8.10.145",
+    "@types/eslint": "^9.6.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^22.13.10",
+    "@types/ws": "^8.18.0",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "vitest": "^3.0.8"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "ws": "^8.18.1"
+  }
+}

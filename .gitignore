@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+.vscode
+.idea
+.DS_Store
+.env*
+public
+!.env.local
+
+minio-storage
+postgres-storage
+ingest-test
+.mock(
