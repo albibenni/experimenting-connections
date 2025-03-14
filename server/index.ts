@@ -1,3 +1,3 @@
-// import { WebSocket } from "ws";
+import { WebSocket } from "ws";
 
-// const server = new WebSocket();
+const server = new WebSocket();
