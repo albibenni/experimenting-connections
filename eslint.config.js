@@ -76,6 +76,7 @@ export default [
       "*.spec.ts",
       ".netlify",
       "pnpm-lock.yaml",
+      "vite.config.js",
       "package-lock.json",
       "yarn.lock",
       "*.mjs",

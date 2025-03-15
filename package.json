@@ -5,9 +5,11 @@
   "author": "Alberto Benatti",
   "license": "ISC",
   "description": "Simple experimenting with websockets and handshakes with nodejs",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
   "scripts": {
+    "fe": "vite",
+    "be": "node ./server/index.ts",
     "build": "rm -rf dist/ && tsc",
     "ci": "pnpm run build",
     "compose": "docker compose down && docker compose up -d",
@@ -39,6 +41,7 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "fastify": "^5.2.1",
+    "vite": "^6.2.2",
     "ws": "^8.18.1"
   }
 }
